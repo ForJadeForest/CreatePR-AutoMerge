@@ -14,9 +14,14 @@ jobs:
         run: |
           git log --format='%aN <%aE>%n%cN <%cE>' | sort -u > AUTHORS
       - name: Create Pull Request
+        id: cpr
         uses: peter-evans/create-pull-request@v4
         with:
           commit-message: update authors
           title: Update AUTHORS
           body: Credit new contributors by updating AUTHORS
           branch: update-authors
+      - uses: peter-evans/enable-pull-request-automerge@v2
+        with:
+          token: ${{ secrets.PAT }}
+          pull-request-number: ${{ steps.cpr.outputs.pull-request-number }}
