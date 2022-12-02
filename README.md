@@ -1,3 +1,3 @@
 # CreatePR-AutoMerge
 
-Change the readme.md 
+Now the version is 0.1
