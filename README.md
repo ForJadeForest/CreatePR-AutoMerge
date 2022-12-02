@@ -1,3 +1,3 @@
 # CreatePR-AutoMerge
 
-Now the version is 0.11
+Now the version is 0.2
