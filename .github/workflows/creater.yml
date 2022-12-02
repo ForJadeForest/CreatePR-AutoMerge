@@ -23,5 +23,5 @@ jobs:
           branch: update-authors
       - uses: peter-evans/enable-pull-request-automerge@v2
         with:
-          token: ${{ secrets.Auto-merge-test }}
+          token: ${{ secrets.AUTOMERGE }}
           pull-request-number: ${{ steps.cpr.outputs.pull-request-number }}
