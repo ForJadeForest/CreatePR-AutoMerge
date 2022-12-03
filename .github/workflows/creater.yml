@@ -17,11 +17,13 @@ jobs:
         id: cpr
         uses: peter-evans/create-pull-request@v4
         with:
+          token: ${{ secrets.AUTOMERGE }}
           commit-message: update authors
           title: Update AUTHORS
           body: Credit new contributors by updating AUTHORS
           branch: update-authors
+      - run: echp 
       - uses: peter-evans/enable-pull-request-automerge@v2
-        with:
+        with: ${{ steps.cpr.outputs.pull-request-number }}
           token: ${{ secrets.AUTOMERGE }}
           pull-request-number: ${{ steps.cpr.outputs.pull-request-number }}
