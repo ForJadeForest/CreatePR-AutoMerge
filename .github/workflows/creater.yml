@@ -22,8 +22,7 @@ jobs:
           title: Update AUTHORS
           body: Credit new contributors by updating AUTHORS
           branch: update-authors
-      - run: echp 
       - uses: peter-evans/enable-pull-request-automerge@v2
-        with: ${{ steps.cpr.outputs.pull-request-number }}
+        with:
           token: ${{ secrets.AUTOMERGE }}
           pull-request-number: ${{ steps.cpr.outputs.pull-request-number }}
