@@ -13,6 +13,7 @@ jobs:
       - name: Update AUTHORS
         run: |
           git log --format='%aN <%aE>%n%cN <%cE>' | sort -u > AUTHORS
+          echo hellow -> AuTHORS
       - name: Create Pull Request
         id: cpr
         uses: peter-evans/create-pull-request@v4
