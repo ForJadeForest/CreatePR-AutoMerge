@@ -21,7 +21,7 @@ jobs:
           commit-message: update authors
           title: Update AUTHORS
           body: Credit new contributors by updating AUTHORS
-          branch: update-authors
+          branch: update-authors2
       - run: echo ${{ steps.cpr.outputs.pull-request-number }}
       - uses: peter-evans/enable-pull-request-automerge@v2
         with:
