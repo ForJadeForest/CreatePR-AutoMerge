@@ -17,4 +17,4 @@ Tips:
 
 |           | ver 2.1.0 | ver 2.2.0 |
 | :-------: | :---------: | :--------------------------: |
-| url | https://my_porject_2.1.0 | https://my_porject_2.2.0 |
+| url | https://my_porject_$(date "+%Y%m%d-%H%M%S") | https://my_porject_$(date "+%Y%m%d-%H%M%S") |
