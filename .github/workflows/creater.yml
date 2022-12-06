@@ -12,7 +12,7 @@ jobs:
           fetch-depth: 0
       - name: Update time
         run: |
-          sed -i 's/\(my_porject_\)\(.\{5\}\)/\12.3.4/g' README.md
+          sed -i 's/\(my_porject_\)\(.\{5\}\)/\1$(date "+%Y%m%d-%H%M%S")/g' README.md
       - name: Create Pull Request
         id: cpr
         uses: peter-evans/create-pull-request@v4
