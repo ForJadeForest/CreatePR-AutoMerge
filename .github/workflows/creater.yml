@@ -12,12 +12,14 @@ jobs:
           fetch-depth: 0
       - name: Extract branch name
         shell: bash
-        run: echo "##[set-output name=branch;]$(echo ${GITHUB_REF#refs/heads/})"
+        run: |
+          echo "##[set-output name=branch;]$(echo ${GITHUB_REF#refs/heads/})"
+          
         id: extract_branch
       - name: Update time
-        echo ${{ steps.extract_branch }}
         if: ${{ steps.extract_branch != 'update-url'}}
         run: |
+          echo ${{ steps.extract_branch }}
           spark_version="2.4.$((RANDOM%10))"
           bigdl_version="2.2.$((RANDOM%10))"
           echo $spark_version-$bigdl_version
