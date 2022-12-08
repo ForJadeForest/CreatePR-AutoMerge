@@ -17,9 +17,9 @@ jobs:
           
         id: extract_branch
       - name: Update time
-        if: ${{ steps.extract_branch != 'update-url'}}
+        if: ${{ steps.extract_branch.outputs.branch != 'update-url'}}
         run: |
-          echo ${{ steps.extract_branch }}
+          echo ${{ steps.extract_branch.outputs.branch }}
           spark_version="2.4.$((RANDOM%10))"
           bigdl_version="2.2.$((RANDOM%10))"
           echo $spark_version-$bigdl_version
