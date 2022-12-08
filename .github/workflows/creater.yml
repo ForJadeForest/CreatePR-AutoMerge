@@ -16,6 +16,7 @@ jobs:
           bigdl_version="2.2.$((RANDOM%10))"
           echo $spark_version-$bigdl_version
           sed "s:[0-9]*\.[0-9]*\.[0-9]*[/-][0-9]*\.[0-9]*\.[0-9]*:$spark_version/$bigdl_version:g" README.md
+          cat README.md
       - name: Create Pull Request
         id: cpr
         uses: peter-evans/create-pull-request@v4
@@ -24,7 +25,7 @@ jobs:
           commit-message: update url
           title: Update download URL
           body: Update download URL
-          branch: update-authors
+          branch: update-url
       - run: echo ${{ steps.cpr.outputs.pull-request-number }}
       - name: Auto Merge
         if: ${{ steps.cpr.outputs.pull-request-number }}
