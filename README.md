@@ -15,6 +15,6 @@ Tips:
 
 **Download url**
 
-|           | ver 2.1.0 | ver 2.2.0 |
+|           | ver 1 | ver 2 |
 | :-------: | :---------: | :--------------------------: |
-| url | https://my_porject_2.1.0 | https://my_porject_2.2.0 |
+| url | https://repo1.maven.org/test_2.4.6/2.1.0/test_2.4.6-2.1.0-fat-jars.zip | https://oss.sonatype.org/content/repositories/snapshots/com/test/test_2.4.6/2.2.0-SNAPSHOT/ |
