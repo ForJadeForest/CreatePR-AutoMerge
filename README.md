@@ -18,4 +18,4 @@ Tips:
 
 |           | ver 1 | ver 2 |
 | :-------: | :---------: | :--------------------------: |
-| url | https://repo1.maven.org/test_2.4.6/2.1.0/test_2.4.6-2.1.0-fat-jars.zip | https://oss.sonatype.org/content/repositories/snapshots/com/test/test_2.4.6/2.2.0-SNAPSHOT/ |
+| url | https://repo1.maven.org/test_2.4.6/2.2.3/test_2.4.6/2.2.3-fat-jars.zip | https://oss.sonatype.org/content/repositories/snapshots/com/test/test_2.4.6/2.2.3-SNAPSHOT/ |
