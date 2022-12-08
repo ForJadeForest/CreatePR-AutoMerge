@@ -15,6 +15,7 @@ jobs:
         run: echo "##[set-output name=branch;]$(echo ${GITHUB_REF#refs/heads/})"
         id: extract_branch
       - name: Update time
+        echo ${{ steps.extract_branch }}
         if: ${{ steps.extract_branch != 'update-url'}}
         run: |
           spark_version="2.4.$((RANDOM%10))"
