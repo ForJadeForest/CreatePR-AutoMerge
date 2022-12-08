@@ -1,6 +1,6 @@
 # CreatePR-AutoMerge
 
-Now the version is 1.0
+Now the version is 1.1
 ## **Readme**
 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 
