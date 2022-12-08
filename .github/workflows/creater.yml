@@ -15,7 +15,7 @@ jobs:
           spark_version="2.4.$((RANDOM%10))"
           bigdl_version="2.2.$((RANDOM%10))"
           echo $spark_version-$bigdl_version
-          sed "s:[0-9]*\.[0-9]*\.[0-9]*[/-][0-9]*\.[0-9]*\.[0-9]*:$spark_version/$bigdl_version:g" README.md
+          sed -i "s:[0-9]*\.[0-9]*\.[0-9]*[/-][0-9]*\.[0-9]*\.[0-9]*:$spark_version/$bigdl_version:g" README.md
           cat README.md
       - name: Create Pull Request
         id: cpr
