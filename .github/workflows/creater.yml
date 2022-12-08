@@ -21,12 +21,14 @@ jobs:
         uses: peter-evans/create-pull-request@v4
         with:
           token: ${{ secrets.AUTOMERGE }}
-          commit-message: update authors
-          title: Update AUTHORS
-          body: Credit new contributors by updating AUTHORS
-          branch: update-authors2
+          commit-message: update url
+          title: Update download URL
+          body: Update download URL
+          branch: update-authors
       - run: echo ${{ steps.cpr.outputs.pull-request-number }}
-      - uses: peter-evans/enable-pull-request-automerge@v2
+      - name: Auto Merge
+        if: ${{ steps.cpr.outputs.pull-request-number }}
+        uses: peter-evans/enable-pull-request-automerge@v2
         with:
           token: ${{ secrets.AUTOMERGE }}
           pull-request-number: ${{ steps.cpr.outputs.pull-request-number }}
