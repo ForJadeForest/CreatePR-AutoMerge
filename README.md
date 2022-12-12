@@ -18,4 +18,4 @@ Tips:
 
 |           | ver 1 | ver 2 |
 | :-------: | :---------: | :--------------------------: |
-| url | https://repo1.maven.org/test_2.4.7/2.2.5/test_2.4.7/2.2.5-fat-jars.zip | https://oss.sonatype.org/content/repositories/snapshots/com/test/test_2.4.7/2.2.5-SNAPSHOT/ |
+| url | https://test-spark_3.1.3/2.2.0-SNAPSHOT/bigdl-assembly-spark_3.1.3-2.2.0-20221207.111439-56.zip | https://test-spark_3.1.3/2.1.0-SNAPSHOT/bigdl-assembly-spark_3.1.3-2.1.0-20220922.061452-3.zip |
