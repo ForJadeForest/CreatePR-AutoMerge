@@ -27,4 +27,17 @@ jobs:
 
       # Runs a single command using the runners shell
       - name: Run a one-line script
-        run: echo This is a test status check!
+        run: |
+            url_list=$(grep -wio "https://oss[0-9_a-zA-Z\/.\-]*" README.md)
+            url_list="$url_list https://wadsad.com"
+            for line in $url_list
+            do
+              wget --spider -T 5 -q -t 2 $line
+              res=$?
+              if [ $res -ne 0 ]; 
+                then
+                    echo "URL:$line ERROR!"
+                    exit
+              fi
+            done
+            echo "all url is valids"
