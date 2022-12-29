@@ -18,4 +18,4 @@ Tips:
 
 |           | ver 1 | ver 2 |
 | :-------: | :---------: | :--------------------------: |
-| url | https://test-spark_3.1.3/2.2.0-SNAPSHOT/bigdl-assembly-spark_3.1.3-2.2.0-20221211.111556-60.zip | https://test-spark_3.1.3/2.1.0-SNAPSHOT/bigdl-assembly-spark_3.1.3-2.1.0-20220922.061452-3.zip |
+| url | https://test-spark_3.1.3/2.2.0-SNAPSHOT/bigdl-assembly-spark_3.1.3-2.2.0-20221228.111455-80.zip | https://test-spark_3.1.3/2.1.0-SNAPSHOT/bigdl-assembly-spark_3.1.3-2.1.0-20220922.061452-3.zip |
